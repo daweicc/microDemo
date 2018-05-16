@@ -1,0 +1,97 @@
+<!--index.wxml-->
+<!-- 
+<view class="myhead">
+  <view>
+    <image src='public/common/img/shao.png'></image>
+    <text>扫一扫</text>
+  </view>
+  <view>
+    <input placeholder='搜索商品，限时抢购'></input>
+  </view>
+  <view>
+  <image src='public/common/img/shao.png'></image>
+  </view>
+</view>
+-->
+
+<swiper id="indexTab" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="indexTabImg slide-image" width="355" height="150"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 
+<button bindtap="changeIndicatorDots"> indicator-dots </button>
+<button bindtap="changeAutoplay"> autoplay </button>
+<slider bindchange="intervalChange" show-value min="500" max="2000"/> interval
+<slider bindchange="durationChange" show-value min="1000" max="10000"/> duration
+-->
+
+<view class="tip">
+  <view class="tipList">
+    <image class="tipImg" src="/public/image/index/tip.png"></image>
+    <text class="tipText">看清楚尺码、款式都OK再下单哦</text>
+  </view>
+  <view class="tipList">
+    <image class="tipImg" src="/public/image/index/tip.png"></image>
+    <text class="tipText">不接受差评哈</text>
+  </view>
+</view>
+
+
+<view class="vggImg">
+  <image class="ggImg" src='http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg'></image>
+</view>
+
+<!--
+<view class="vLine"></view>
+ -->
+
+ <!--私人定制 -->
+<view class="topicView">
+  <view class="topicView_in">
+    <view class="contentTitle">私人定制</view>
+
+    <!-- 列表开始 -->
+    <view class="gList">
+      <view class="cList">
+        <view><image class="gImg" src="/public/image/index/goodsList.jpg"></image></view>
+        <view class="vName"><text class="gName">女神的新衣呀</text></view>
+        <view><text class="gPrice">￥499</text></view>
+      </view>
+
+      <view class="cList">
+        <view><image class="gImg" src="/public/image/index/goodsList.jpg"></image></view>
+        <view class="vName"><text class="gName">女神的新衣呀</text></view>
+        <view><text class="gPrice">￥499</text></view>
+      </view>
+      <view class="cList">
+        <view><image class="gImg" src="/public/image/index/goodsList.jpg"></image></view>
+        <view class="vName"><text class="gName">女神的新衣呀</text></view>
+        <view><text class="gPrice">￥499</text></view>
+      </view>
+      <view class="cList">
+        <view><image class="gImg" src="/public/image/index/goodsList.jpg"></image></view>
+        <view class="vName"><text class="gName">女神的新衣呀</text></view>
+        <view><text class="gPrice">￥499</text></view>
+      </view>
+      <view class="cList">
+        <view><image class="gImg" src="/public/image/index/goodsList.jpg"></image></view>
+        <view class="vName"><text class="gName">女神的新衣呀</text></view>
+        <view><text class="gPrice">￥499</text></view>
+      </view>
+      <view class="cList">
+        <view><image class="gImg" src="/public/image/index/goodsList.jpg"></image></view>
+        <view class="vName"><text class="gName">女神的新衣呀</text></view>
+        <view><text class="gPrice">￥499</text></view>
+      </view>
+    </view>
+
+    <view class="readMore"><text class="readMoreText">查看更多</text>>> </view>
+
+  </view>
+ </view>
+<!-- 列表结束 -->
+
+
